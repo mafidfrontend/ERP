@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
 const initialProfileData = {
+  id: 1,
   name: 'Aziz Karimov',
   email: 'aziz.karimov@gmail.com',
   phone: '+998 90 123 45 67',

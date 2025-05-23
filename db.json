@@ -1,0 +1,182 @@
+{
+    "menuItems": [
+        { "id": 1, "path": "/home", "title": "Home" },
+        { "id": 2, "path": "/group", "title": "Group" },
+        { "id": 3, "path": "/payments", "title": "To'lovlarim" },
+        { "id": 4, "path": "/ranking", "title": "Reyting" },
+        { "id": 5, "path": "/profile", "title": "Profile" },
+        { "id": 6, "path": "/shop", "title": "Shop" },
+        { "id": 7, "path": "/stats", "title": "Ko'rsatgichlarim" },
+        { "id": 8, "path": "/settings", "title": "Settings" }
+    ],
+    "settings": {
+        "id": 1,
+        "theme": "light",
+        "font": "sans",
+        "notifications": ["Xush kelibsiz!", "Yangi vazifa yuklandi!"]
+    },
+    "stats": {
+        "id": 1,
+        "totalSilverCoins": 850,
+        "distribution": [
+            { "category": "Attendance", "coins": 350, "percentage": 41 },
+            { "category": "Homework", "coins": 280, "percentage": 33 },
+            { "category": "Participation", "coins": 150, "percentage": 18 },
+            { "category": "Bonuses", "coins": 70, "percentage": 8 }
+        ],
+        "weekly": [
+            { "week": "Week 1", "coins": 45 },
+            { "week": "Week 2", "coins": 60 },
+            { "week": "Week 3", "coins": 40 },
+            { "week": "Week 4", "coins": 90 },
+            { "week": "Week 5", "coins": 75 }
+        ]
+    },
+    "shop": {
+        "silverCoins": 850,
+        "items": [
+            {
+                "id": 1,
+                "name": "Extra Homework Pass",
+                "description": "Skip one homework assignment without penalty",
+                "price": 300,
+                "image": "https://i.imgur.com/JR0SCJ6.png"
+            },
+            {
+                "id": 2,
+                "name": "Late Arrival Voucher",
+                "description": "One-time permission to arrive late without attendance impact",
+                "price": 200,
+                "image": "https://i.imgur.com/R5rLMU3.png"
+            },
+            {
+                "id": 3,
+                "name": "Bonus Points Certificate",
+                "description": "Get 10 extra points on any assignment",
+                "price": 500,
+                "image": "https://i.imgur.com/wgF08S7.png"
+            },
+            {
+                "id": 4,
+                "name": "Exclusive Notebook",
+                "description": "Premium notebook with educational center logo",
+                "price": 150,
+                "image": "https://i.imgur.com/uEyMCva.png"
+            },
+            {
+                "id": 5,
+                "name": "Special Certificate",
+                "description": "Certificate of Achievement to display your success",
+                "price": 400,
+                "image": "https://i.imgur.com/Tzm3NyB.png"
+            },
+            {
+                "id": 6,
+                "name": "Virtual High Five",
+                "description": "Get a personalized video high five from your teacher",
+                "price": 100,
+                "image": "https://i.imgur.com/L47JyFl.png"
+            }
+        ]
+    },
+    "ranking": {
+        "currentRank": 7,
+        "silverCoins": 850,
+        "students": [
+            { "id": 1, "name": "Kamron Alimov", "points": 1250, "rank": 1 },
+            { "id": 2, "name": "Shahzoda Rahimova", "points": 1150, "rank": 2 },
+            { "id": 3, "name": "Bobur Karimov", "points": 1080, "rank": 3 },
+            { "id": 4, "name": "Nilufar Azizova", "points": 950, "rank": 4 },
+            { "id": 5, "name": "Javohir Turdiev", "points": 920, "rank": 5 },
+            { "id": 6, "name": "Malika Yusupova", "points": 890, "rank": 6 },
+            {
+                "id": 7,
+                "name": "Aziz Karimov",
+                "points": 850,
+                "rank": 7,
+                "isCurrentUser": true
+            },
+            { "id": 8, "name": "Nodira Safarova", "points": 820, "rank": 8 },
+            { "id": 9, "name": "Umid Rustamov", "points": 790, "rank": 9 },
+            { "id": 10, "name": "Zarina Ikramova", "points": 750, "rank": 10 }
+        ]
+    },
+    "profile": {
+        "id": 1,
+        "name": "Aziz Karimov",
+        "email": "aziz.karimov@gmail.com",
+        "phone": "+998 90 123 45 67",
+        "group": "Advanced English B2",
+        "address": "Tashkent, Mirzo Ulugbek district",
+        "birthday": "2004-05-20",
+        "parentPhone": "+998 90 987 65 43",
+        "joinDate": "2025-01-15",
+        "profileImage": "https://i.pravatar.cc/300?img=11"
+    },
+    "payments": {
+        "nextPayment": {
+            "date": "2025-06-15",
+            "amount": "250000",
+            "status": "Upcoming"
+        },
+        "history": [
+            {
+                "id": 1,
+                "date": "2025-05-15",
+                "amount": "250000",
+                "status": "Paid"
+            },
+            {
+                "id": 2,
+                "date": "2025-04-15",
+                "amount": "250000",
+                "status": "Paid"
+            },
+            {
+                "id": 3,
+                "date": "2025-03-15",
+                "amount": "250000",
+                "status": "Paid"
+            },
+            {
+                "id": 4,
+                "date": "2025-02-15",
+                "amount": "250000",
+                "status": "Paid"
+            },
+            {
+                "id": 5,
+                "date": "2025-01-15",
+                "amount": "250000",
+                "status": "Paid"
+            }
+        ]
+    },
+    "student": {
+        "name": "Aziz Karimov",
+        "password": "pas123",
+        "points": 850,
+        "nextPayment": {
+            "date": "2025-06-15",
+            "amount": "250000"
+        },
+        "attendance": 85,
+        "homework": 92
+    },
+    "group": {
+        "name": "Advanced English B2",
+        "teacher": {
+            "name": "Sarah Johnson",
+            "email": "sarah.johnson@edu-center.com",
+            "phone": "+998 90 123 45 67"
+        },
+        "schedule": [
+            { "day": "Monday", "time": "16:00 - 17:30", "room": "Room 305" },
+            { "day": "Wednesday", "time": "16:00 - 17:30", "room": "Room 305" },
+            { "day": "Friday", "time": "16:00 - 17:30", "room": "Room 305" }
+        ],
+        "students": 18,
+        "startDate": "2025-02-15",
+        "endDate": "2025-08-15"
+    }
+}

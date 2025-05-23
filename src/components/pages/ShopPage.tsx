@@ -1,58 +1,22 @@
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-
-const shopData = {
-  silverCoins: 850,
-  items: [
-    { 
-      id: 1, 
-      name: 'Extra Homework Pass', 
-      description: 'Skip one homework assignment without penalty', 
-      price: 300,
-      image: 'https://i.imgur.com/JR0SCJ6.png'
-    },
-    { 
-      id: 2, 
-      name: 'Late Arrival Voucher', 
-      description: 'One-time permission to arrive late without attendance impact', 
-      price: 200,
-      image: 'https://i.imgur.com/R5rLMU3.png'
-    },
-    { 
-      id: 3, 
-      name: 'Bonus Points Certificate', 
-      description: 'Get 10 extra points on any assignment', 
-      price: 500,
-      image: 'https://i.imgur.com/wgF08S7.png'
-    },
-    { 
-      id: 4, 
-      name: 'Exclusive Notebook', 
-      description: 'Premium notebook with educational center logo', 
-      price: 150,
-      image: 'https://i.imgur.com/uEyMCva.png'
-    },
-    { 
-      id: 5, 
-      name: 'Special Certificate', 
-      description: 'Certificate of Achievement to display your success', 
-      price: 400,
-      image: 'https://i.imgur.com/Tzm3NyB.png'
-    },
-    { 
-      id: 6, 
-      name: 'Virtual High Five', 
-      description: 'Get a personalized video high five from your teacher', 
-      price: 100,
-      image: 'https://i.imgur.com/L47JyFl.png'
-    }
-  ]
-};
+import { useEffect, useState } from "react";
+import { getShopItems } from "../services/shopServie";
+import { Shop } from "@/types";
 
 const ShopPage = () => {
   const { toast } = useToast();
-  
+  const [shopData, setItems] = useState<Shop>();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getShopItems()
+      .then(setItems)
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) return <p>Yuklanmoqda...</p>;
   const handlePurchase = (itemName: string, price: number) => {
     toast({
       title: "Item Purchased!",
