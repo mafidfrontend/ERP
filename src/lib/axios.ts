@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: "https://mafid.uz",
+    baseURL: "http://localhost:4000",
     headers: {
         "Content-Type": "application/json",
     },
